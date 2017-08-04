@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jaira.cabarrubias.com.easy_calc.user.easy_calc.MainActivity">
+
+    <EditText
+        android:id="@+id/etfirstNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Number"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/etsecondNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Second Number"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/etfirstNo" />
+
+    <TextView
+        android:id="@+id/TvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etsecondNo"
+        android:text="0"
+        android:gravity="center"
+        android:textSize="30dp"
+        />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="3"
+        android:layout_below="@+id/TvResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:id="@+id/gridLayout">
+
+        <Button
+            android:id="@+id/btnadd"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:text="+"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btnminus"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:text="-"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btnclear"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:text="C"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btnmultiply"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:text="*"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btndivide"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:text="/"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/btnexit"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="68dp"
+            android:text="exit"
+            android:textSize="20dp"/>
+
+
+    </GridLayout>
+
+
+
+</RelativeLayout>
